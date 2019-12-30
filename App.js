@@ -29,18 +29,34 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {Loginscreen, Homescreen} from "./app/component/screen"
-
-const App: () => React$Node = () => {
+import {Loginscreen, Homescreen, Getstartedscreen, Getstarted1} from "./app/component/screen"
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+/*const App: () => React$Node = () => {
 
   return (
 <View>
-<Homescreen />
-<Loginscreen />
+<Getstartedscreen />
 </View>
   );
 
 };
+*/
 
+const RootStack = createStackNavigator(
+  {
+    Home: Getstartedscreen,
+    Secondscreen: Getstarted1
+  },
+  {
+    initialRouteName: 'Home',
+  }
+);
 
-export default App;
+const AppContainer = createAppContainer(RootStack);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
