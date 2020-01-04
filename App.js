@@ -29,7 +29,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {Loginscreen, Homescreen, Getstartedscreen, Getstarted1} from "./app/component/screen"
+import {Registerscreen, Homescreen, Getstartedscreen, Getstarted1,Loginscreen} from "./app/screen"
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 /*const App: () => React$Node = () => {
@@ -46,7 +46,9 @@ import { createStackNavigator } from 'react-navigation-stack';
 const RootStack = createStackNavigator(
   {
     Home: Getstartedscreen,
-    Secondscreen: Getstarted1
+    Secondscreen: Getstarted1,
+    Registerscreen: Registerscreen,
+    Loginscreen: Loginscreen,
   },
   {
     initialRouteName: 'Home',
