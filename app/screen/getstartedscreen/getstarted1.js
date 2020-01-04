@@ -21,7 +21,7 @@ export default class Getstarted1 extends Component {
     render() {
         return (
             <View >
-                <View style={{flexDirection:'row-reverse',padding:10}}> 
+                <View style={{flexDirection:'row-reverse',padding:20,paddingBottom:30}}> 
                     <Text style={styles.text} onPress={ this.ButtonClickLoginScreen }>Log in</Text>
                 </View>
                 <View style={{alignItems:'center'}}>
@@ -30,7 +30,7 @@ export default class Getstarted1 extends Component {
                 <View style={{alignItems:'center'}}>
                     <Text style={styles.textheading}>Find food you love</Text>
                     <View style={{width: 200, height: 70}}>
-                    <Text style={[styles.textndung,{color:'black',textAlign:'center'}]}>Discover the best foods from over 1000 restaurants</Text>
+                    <Text style={[styles.textndung,{color:'gray',textAlign:'center'}]}>Discover the best foods from over 1000 restaurants</Text>
                 </View>
                 <View style={{backgroundColor:'white',height:50,width:'100%'}}></View>
                 </View>
