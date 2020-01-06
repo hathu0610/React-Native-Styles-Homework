@@ -8,6 +8,7 @@ const AuthStack = createStackNavigator({
     Secondscreen: Getstarted1,
     Registerscreen: Registerscreen,
     Loginscreen: Loginscreen,
+    
   },
   {
     initialRouteName: 'Home',

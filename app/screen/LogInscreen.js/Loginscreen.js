@@ -32,6 +32,7 @@ export default class Loginscreen extends Component {
                 
                 if (value === this.state.password){
                     this.setState({register:"pass"})
+                    this.props.navigation.navigate('AppStack')
                 } 
                 else {
                     this.setState({register:"Wrong password. Try again"})
