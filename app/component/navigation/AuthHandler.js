@@ -1,13 +1,10 @@
-//Check whether can log in or not
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { createSwitchNavigator, createAppContainer } from "react-navigation";
+import AppStack from "./AppNavigator";
+import AuthStack from "./AuthNavigator";
 
-export default class AuthHandler extends Component {
-    render() {
-        return (
-            <View>
-                <Text> textInComponent </Text>
-            </View>
-        )
-    }
-}
+const Switcher = createSwitchNavigator({
+    AuthStack: AuthStack,
+    App: AppStack,
+});
+
+export default createAppContainer(Switcher);

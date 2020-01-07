@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>7C763A0D-9026-48BF-90A4-2A5319E2F2C5</key>
+		<key>12BADFCF-F8E5-4646-8943-581B4AE4DEA9</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,13 +15,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7C763A0D-9026-48BF-90A4-2A5319E2F2C5.xcactivitylog</string>
+			<string>12BADFCF-F8E5-4646-8943-581B4AE4DEA9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>temp project</string>
@@ -32,13 +32,47 @@
 			<key>signature</key>
 			<string>Building workspace temp with scheme temp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>599980838.92539895</real>
+			<real>600085486.40961599</real>
 			<key>timeStoppedRecording</key>
-			<real>599980839.68512106</real>
+			<real>600085487.97331405</real>
 			<key>title</key>
 			<string>Building workspace temp with scheme temp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>7C763A0D-9026-48BF-90A4-2A5319E2F2C5</string>
+			<string>12BADFCF-F8E5-4646-8943-581B4AE4DEA9</string>
+		</dict>
+		<key>B3E1C224-0094-4C73-8621-BF80F5A9D777</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B3E1C224-0094-4C73-8621-BF80F5A9D777.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>temp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>temp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace temp with scheme temp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>600078117.05171096</real>
+			<key>timeStoppedRecording</key>
+			<real>600078119.37768698</real>
+			<key>title</key>
+			<string>Building workspace temp with scheme temp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>B3E1C224-0094-4C73-8621-BF80F5A9D777</string>
 		</dict>
 	</dict>
 </dict>

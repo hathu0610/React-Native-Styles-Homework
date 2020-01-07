@@ -15,7 +15,7 @@ export default class Loginscreen extends Component {
         }
      }
     ButtonClickDkiScreen = () => {
-        this.props.navigation.navigate('Registerscreen')
+        this.props.navigation.navigate('Registerscreen');
     }
    handleChangeInputUsername = () => {
        console.log(this.state.username)
@@ -32,7 +32,7 @@ export default class Loginscreen extends Component {
                 
                 if (value === this.state.password){
                     this.setState({register:"pass"})
-                    this.props.navigation.navigate('AppStack')
+                    this.props.navigation.navigate('AppStack',{name:'thu'})
                 } 
                 else {
                     this.setState({register:"Wrong password. Try again"})
