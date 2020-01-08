@@ -4,18 +4,9 @@ import { Button, Text, View, TouchableOpacity, StyleSheet} from 'react-native'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';  
-import {Homescreen} from '../../screen'
+import {Homescreen,OthersScreen} from '../../screen'
+import { Icon } from 'react-native-elements'
 
-
-  class OthersScreen extends React.Component {  
-    render() {  
-      return (  
-          <View style={styles.container}>  
-            <Text>Others Screen</Text>  
-          </View>  
-      );  
-    }  
-  }   
   class AccountScreen extends React.Component {  
       render() {  
           return (  
@@ -32,76 +23,34 @@ import {Homescreen} from '../../screen'
           alignItems: 'center'  
       },  
   });  
-  
- /*const AppStack = createMaterialBottomTabNavigator(  
-      {  
-          Home: { screen: Homescreen,  
-              navigationOptions:{  
-                  tabBarLabel:'Home',  
-                  tabBarIcon: ({ tintColor }) => (  
-                      <View>  
-                          <Icon style={[{color: tintColor}]} size={25} name={'ios-home'}/>  
-                      </View>),  
-                      activeColor: '#FF4E56',  
-                      inactiveColor: 'grey',  
-                      barStyle: { backgroundColor: 'white' },  
-              }  
-          },  
-          Profile: { screen: ProfileScreen,  
-              navigationOptions:{  
-                  tabBarLabel:'Profile',  
-                  tabBarIcon: ({ tintColor }) => (  
-                      <View>  
-                          <Icon style={[{color: tintColor}]} size={25} name={'ios-person'}/>  
-                      </View>),  
-                   activeColor: '#FF4E56',  
-                   inactiveColor: 'grey',  
-                   barStyle: { backgroundColor: 'white' },  
-              }  
-          },  
-          Image: { screen: ImageScreen,  
-              navigationOptions:{  
-                  tabBarLabel:'History',  
-                  tabBarIcon: ({ tintColor }) => (  
-                      <View>  
-                          <Icon style={[{color: tintColor}]} size={25} name={'ios-images'}/>  
-                      </View>),  
-                  activeColor: '#FF4E56',  
-                  inactiveColor: 'grey',  
-                  barStyle: { backgroundColor: 'white' },   
-              }  
-          },  
-          Cart: {  
-              screen: CartScreen,  
-              navigationOptions:{  
-                  tabBarLabel:'Cart',  
-                  tabBarIcon: ({ tintColor }) => (  
-                      <View>  
-                          <Icon style={[{color: tintColor}]} size={25} name={'ios-cart'}/>  
-                      </View>),  
-                      activeColor: '#FF4E56',  
-                      inactiveColor: 'grey',  
-                      barStyle: { backgroundColor: 'white' },   
-              }  
-          },  
-      },  
-      {  
-        initialRouteName: "Home",  
-        activeColor: '#f0edf6',  
-        inactiveColor: '#226557',  
-        barStyle: { backgroundColor: 'white' },  
-      },  
-  );  
-    /*
-   import React, { Component } from 'react'
-   import { Text, View } from 'react-native'
-   import Loginscreen from '../../screen'
-   const AppStack = createStackNavigator({ Loginscreen });
-   */
   const AppStack = createBottomTabNavigator ({
-      'Home': Homescreen,
-      'Others': OthersScreen,
-      'Account': AccountScreen,
-  },
+      'Home': {screen: Homescreen,
+                navigationOptions:{  
+                    tabBarLabel:'Home',  
+                    tabBarIcon: ({ tintColor }) => <Icon name="home" size={25} color={tintColor} />,  
+                },
+      }
+      ,
+      'Others': {screen: OthersScreen,
+        navigationOptions:{  
+            tabBarLabel:'Others',  
+            tabBarIcon: ({ tintColor }) => <Icon name="add" size={25} color={tintColor} />,  
+        },
+}
+,
+      'Account': {screen: AccountScreen,  
+      navigationOptions:{  
+          tabBarLabel:'Account',  
+          tabBarIcon: ({ tintColor }) => <Icon name="person" size={25} color={tintColor} />,  
+              }
+             }   ,
+  },{  
+    initialRouteName: "Home",  
+    tabBarOptions: {
+        activeTintColor: '#FF4E56',
+        inactiveTintColor: 'gray',
+      }, 
+    barStyle: { backgroundColor: 'white' },  
+  }, 
   );
   export default AppStack;
