@@ -45,7 +45,7 @@ export default class Homescreen extends Component  {
         </ScrollView>
         </SafeAreaView>
         </View>
-        <Scrollview horizontalornot = {false}/>
+        <Scrollview horizontalornot = {false} />
       </View>
       
       );  
