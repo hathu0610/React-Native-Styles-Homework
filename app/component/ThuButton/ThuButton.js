@@ -5,8 +5,8 @@ export default class ThuButton extends PureComponent {
     render() {
         return (
             <View>
-            <TouchableOpacity style={[styles.SubmitFormStyle,{backgroundColor:'#FF4E56',alignItems:'center',paddingRight: 20}]} activeOpacity = { .5 } onPress={ this.props.buttonclick }>
-            <Text style={[styles.TextStyle,{color:'white'}]}>{this.props.title}</Text>
+            <TouchableOpacity style={[styles.SubmitFormStyle,{backgroundColor:this.props.buttoncolor,alignItems:'center',paddingRight: 20}]} activeOpacity = { .5 } onPress={ this.props.buttonclick }>
+            <Text style={[styles.TextStyle,{color:this.props.textcolor,fontWeight: this.props.weight}]}>{this.props.title}</Text>
             </TouchableOpacity>
             </View>
         )

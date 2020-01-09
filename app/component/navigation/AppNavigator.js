@@ -4,18 +4,10 @@ import { Button, Text, View, TouchableOpacity, StyleSheet} from 'react-native'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';  
-import {Homescreen,OthersScreen} from '../../screen'
+import {Homescreen,OthersScreen,OffersScreen} from '../../screen'
 import { Icon } from 'react-native-elements'
 
-  class AccountScreen extends React.Component {  
-      render() {  
-          return (  
-              <View style={styles.container}>  
-                  <Text>Account Screen</Text>  
-              </View>  
-          );  
-      }  
-  }  
+
   const styles = StyleSheet.create({  
       container: {  
           flex: 1,  
@@ -38,10 +30,10 @@ import { Icon } from 'react-native-elements'
         },
 }
 ,
-      'Account': {screen: AccountScreen,  
+      'Offers': {screen: OffersScreen,  
       navigationOptions:{  
-          tabBarLabel:'Account',  
-          tabBarIcon: ({ tintColor }) => <Icon name="person" size={25} color={tintColor} />,  
+          tabBarLabel:'Offers',  
+          tabBarIcon: ({ tintColor }) => <Icon name="stars" size={25} color={tintColor} />,  
               }
              }   ,
   },{  

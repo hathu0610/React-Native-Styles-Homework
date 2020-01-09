@@ -17,7 +17,7 @@ export default class Scrollview extends Component {
         return (
             <ScrollView horizontal = {this.props.horizontalornot} >
             {this.state.food.map((item, key) =>
-            <View style={{width: this.props.imgw,height: 220,alignItems:'center',paddingRight:10,flexDirection:this.props.flexdir,justifyContent:'flex-start'}}>
+            <View style={{width: this.props.imgw,height: 220,paddingRight:10,flexDirection:this.props.flexdir,justifyContent:'flex-start'}}>
               <View style={{width: '100%',height: 150,paddingRight:10}}><Image style={{width: '100%',height: 150,resizeMode:'cover'}} source={item.sourc}></Image></View>
               <View style ={{paddingBottom:60,width:'100%'}}> 
               <View style={{width: '100%',height: 30,paddingTop:5}}>

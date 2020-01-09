@@ -36,7 +36,7 @@ export default class Registerscreen extends Component {
                 <TextInput style={[styles.SubmitFormStyle]} activeOpacity = { .5 } placeholder = "Password" onChangeText={(text)=>{ this.handleTextChange('pass',text)}} />
 
 
-                <ThuButton title="Register" buttonclick = {this._storeData} />
+                <ThuButton title="Register" buttonclick = {this._storeData} buttoncolor = "#FF4E56" textcolor ="white"/>
 
                 <View style={{alignItems:'center',width: 200, height: 70}}>
                 <Text style={[styles.textndung,{color:'black',textAlign:'center',paddingTop:20}]}>By clicking sign up you agree to our terms and condition</Text>

@@ -54,8 +54,8 @@ export default class Loginscreen extends Component {
                 <View style={{alignItems:'center'}}>
                <TextInput style={[styles.SubmitFormStyle]} activeOpacity = { .5 } placeholder = "Username"  onChangeText={(text)=>{ this.handleTextChange('username',text) }}/>
                 <TextInput style={[styles.SubmitFormStyle]} activeOpacity = { .5 } placeholder = "Password"  onChangeText={(text)=>{ this.handleTextChange('password',text) }}/>
-                <ThuButton title="Submit"  buttonclick ={this._retrieveData} />
-                <ThuButton title="Create new account"  buttonclick ={this.ButtonClickDkiScreen} />
+                <ThuButton title="Submit"  buttonclick ={this._retrieveData} buttoncolor = "#FF4E56" textcolor ="white"/>
+                <ThuButton title="Create new account"  buttonclick ={this.ButtonClickDkiScreen} buttoncolor = "grey" textcolor ="white"/>
                 </View>
                 <View style={{alignItems:'center'}}><Text style={[styles.textndung,{width:'80%',color:'black',textAlign:'center',paddingTop:20}]}>{this.state.register}</Text></View>
         </View> 

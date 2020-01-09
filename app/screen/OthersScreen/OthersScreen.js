@@ -11,11 +11,11 @@ export default class OthersScreen extends Component {
               <View style={{height: 70,}}> 
                   <SearchBar placeholder="Search foods..." lightTheme = {true} containerStyle={{backgroundColor:'white'}} inputContainerStyle={{backgroundColor:'lightgray'}}/>
               </View>
-              <View style={{height: 50, backgroundColor: 'green'}}></View>
+              <View style={{height: 50}}><Text style={{color:"#FF4E56",fontSize:25,fontWeight:'bold'}}>Popular Choices</Text></View>
               <View  style={{width:'100%',height: 220,alignItems:'center'}}>
                 <Scrollview horizontalornot = {true} imgw = {250}/>
               </View>
-              <View style={{height: 50, backgroundColor: 'green'}}></View>
+              <View style={{height: 40}}><Text style={{color:"#FF4E56",fontSize:25,fontWeight:'bold'}}>New Restaurant</Text></View>
                 <Scrollview  imgw = {150} flexdir = "row"/>
             </View>
           );  

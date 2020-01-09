@@ -40,7 +40,7 @@
 			<key>uniqueIdentifier</key>
 			<string>12BADFCF-F8E5-4646-8943-581B4AE4DEA9</string>
 		</dict>
-		<key>B3E1C224-0094-4C73-8621-BF80F5A9D777</key>
+		<key>ED490057-41A4-4C5A-B538-E86D9F4AEFC7</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B3E1C224-0094-4C73-8621-BF80F5A9D777.xcactivitylog</string>
+			<string>ED490057-41A4-4C5A-B538-E86D9F4AEFC7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,13 @@
 			<key>signature</key>
 			<string>Building workspace temp with scheme temp and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>600078117.05171096</real>
+			<real>600246271.93523395</real>
 			<key>timeStoppedRecording</key>
-			<real>600078119.37768698</real>
+			<real>600246273.87747395</real>
 			<key>title</key>
 			<string>Building workspace temp with scheme temp and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>B3E1C224-0094-4C73-8621-BF80F5A9D777</string>
+			<string>ED490057-41A4-4C5A-B538-E86D9F4AEFC7</string>
 		</dict>
 	</dict>
 </dict>
